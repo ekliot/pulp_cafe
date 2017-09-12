@@ -78,18 +78,13 @@ def generate
   # the naive 'final' string
   fin = expanded.delete('<>')
 
-  puts "naive :: " + fin
-
   # prune the pre-naive-final string
   fin = prune expanded, @tweet_max_len
 
   # if pruning was ineffective, regenerate
   if fin.size > @tweet_max_len
-    puts "UH OH :: #{fin}"
     fin = arrival
   end
-
-  puts "final :: " + fin
 
   fin
 end
