@@ -7,7 +7,7 @@ require 'chatterbot/dsl'
 # Enabling **debug_mode** prevents the bot from actually sending
 # tweets. Keep this active while you are developing your bot. Once you
 # are ready to send out tweets, you can remove this line.
-debug_mode # TODO
+debug_mode
 
 # Chatterbot will keep track of the most recent tweets your bot has
 # handled so you don't need to worry about that yourself. While
@@ -15,40 +15,17 @@ debug_mode # TODO
 # chatterbot from updating those values. This directive can also be
 # handy if you are doing something advanced where you want to track
 # which tweet you saw last on your own.
-no_update # TODO
+no_update
 
 # remove this to get less output when running your bot
-verbose # TODO
-
-# Here's a list of words to exclude from searches. Use this list to
-# add words which your bot should ignore for whatever reason.
-# exclude "hi", "spammer", "junk" # TODO
-
-# Exclude a list of offensive, vulgar, 'bad' words. This list is
-# populated from Darius Kazemi's wordfilter module
-# @see https://github.com/dariusk/wordfilter
-# exclude bad_words # TODO
-
-# This will restrict your bot to tweets that come from accounts that
-# are following your bot. A tweet from an account that isn't following
-# will be rejected
-# only_interact_with_followers # TODO
-
-#
-# Specifying 'use_streaming' will cause Chatterbot to use Twitter's
-# Streaming API. Your bot will run constantly, listening for tweets.
-# Alternatively, you can run your bot as a cron/scheduled job. In that
-# case, do not use this line. Every time you run your bot, it will
-# execute once, and then exit.
-#
-# use_streaming # TODO
+verbose
 
 # # # # # # # #
 # SCRIPT VARS #
 # # # # # # # #
 
 # the data to use for tweet creation
-@data
+@data = {}
 
 # the notation for string expansion or pruning
 # \w indicates any char, num, or _
@@ -80,8 +57,8 @@ def start
     snooze = true
   end
   # @data = JSON.parse( IO.read 'arrival.json' )
-  # @data = JSON.parse( IO.read 'visitor.json' )
-  @data = JSON.parse( IO.read 'departure.json' )
+  @data = JSON.parse( IO.read 'visitor.json' )
+  # @data = JSON.parse( IO.read 'departure.json' )
 
   # if !snooze then tweet generate end
   (1..10).each do tweet generate; puts "\n\n" end
@@ -101,7 +78,7 @@ def generate
   # the naive 'final' string
   fin = expanded.delete('<>')
 
-  # puts "naive :: " + fin
+  puts "naive :: " + fin
 
   # prune the pre-naive-final string
   fin = prune expanded, @tweet_max_len
@@ -112,7 +89,7 @@ def generate
     fin = arrival
   end
 
-  # puts "final :: " + fin
+  puts "final :: " + fin
 
   fin
 end
@@ -134,7 +111,7 @@ def expand( str, data )
 
       # replace expansion notations with a random
       # element from that notation's attribute
-      out.sub! "##{match}#", data["#{match}"].sample
+      out.sub! "##{match}#", data["#{match}"].sample # TODO account for non-existent symbols
     end
 
     # recurse on the expanded string for further expansion
@@ -184,6 +161,20 @@ start
 #############################
 # TODO For future reference #
 #############################
+
+# Here's a list of words to exclude from searches. Use this list to
+# add words which your bot should ignore for whatever reason.
+# exclude "hi", "spammer", "junk" # TODO
+
+# Exclude a list of offensive, vulgar, 'bad' words. This list is
+# populated from Darius Kazemi's wordfilter module
+# @see https://github.com/dariusk/wordfilter
+# exclude bad_words # TODO
+
+# This will restrict your bot to tweets that come from accounts that
+# are following your bot. A tweet from an account that isn't following
+# will be rejected
+# only_interact_with_followers # TODO
 
 #
 # interesting methods that could be used for interactions?

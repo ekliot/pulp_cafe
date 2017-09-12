@@ -1,3 +1,306 @@
 {
-  "roots": ["visitor"]
+  "roots": [
+    "#head# #followup# #quip#"
+  ],
+  "head": [
+    "Today, #visitor_prep# #action_sing#< #where#>.",
+    "#visitor_prep_cap# #action_sing#< #where#>.",
+    "Today, #visitors_prep# #action_plur#< #where#>.",
+    "#visitors_prep_cap# #action_plur#< #where#>.",
+    "#visitor_prep_cap#'s arrival was unprecedented.",
+    "#visitors_prep_cap#'s arrival was unprecedented.",
+    "#visitor_prep_cap# wandered in, #prepared# to #verb_strong#.",
+    "#visitors_prep_cap# wander in, #prepared# to #verb_strong#."
+  ],
+  "prepared": [
+    "anxious",
+    "hungry",
+    "prepared",
+    "eager",
+    "restless"
+  ],
+  "visitor_prep": [
+    "a #adj_visitor_cons# #visitor#",
+    "an #adj_visitor_vowl# #visitor#",
+    "that #adj_visitor# #visitor#",
+    "the #adj_visitor# #visitor#"
+  ],
+  "visitors_prep": [
+    "those <#number# >#adj_visitor# #visitors#",
+    "the <#number# >#adj_visitor# #visitors#"
+  ],
+  "visitor_prep_cap": [
+    "A #adj_visitor_cons# #visitor#",
+    "An #adj_visitor_vowl# #visitor#",
+    "That #adj_visitor# #visitor#",
+    "The #adj_visitor# #visitor#"
+  ],
+  "visitors_prep_cap": [
+    "Those <#number# >#adj_visitor# #visitors#",
+    "The <#number# >#adj_visitor# #visitors#"
+  ],
+  "number": [
+    "one",
+    "two",
+    "three",
+    "four",
+    "five",
+    "six",
+    "seven",
+    "eight",
+    "nine",
+    "ten",
+    "eleven",
+    "twelve",
+    "thirteen",
+    "dozen",
+    "many",
+    "few",
+    "countless"
+  ],
+  "visitor": [
+    "woman",
+    "man",
+    "girl",
+    "boy",
+    "child",
+    "warrior",
+    "wanderer",
+    "vagrant",
+    "rogue",
+    "knight",
+    "noble",
+    "peasant",
+    "artisan",
+    "craftsman",
+    "performer",
+    "urchin",
+    "figure"
+  ],
+  "visitors": [
+    "women",
+    "men",
+    "girls",
+    "boys",
+    "children",
+    "warriors",
+    "wanderers",
+    "vagrants",
+    "rogues",
+    "knights",
+    "nobles",
+    "peasants",
+    "artisans",
+    "craftsmans",
+    "performers",
+    "urchins",
+    "figures"
+  ],
+  "adj": [
+    "#adj_cons#",
+    "#adj_vowl#"
+  ],
+  "adj_prep": [
+    "a #adj_cons#",
+    "an #adj_vowl#"
+  ],
+  "adj_cons": [
+    "#adj_visitor_cons#",
+    "#adj_cafe_cons#"
+  ],
+  "adj_vowl": [
+    "#adj_visitor_vowl#",
+    "#adj_cafe_vowl#"
+  ],
+  "adj_visitor": [
+    "#adj_visitor_cons#",
+    "#adj_visitor_vowl#"
+  ],
+  "adj_visitor_cons": [
+    "#cafe_adj_cons#",
+    "#colour_cons#-haired",
+    "#colour_cons#-garbed",
+    "#material_cons#-armoured",
+    "#skin_cons#-skinned",
+    "calloused",
+    "grim",
+    "freckled",
+    "gravel-voiced",
+    "rare",
+    "gaunt",
+    "sombre",
+    "free",
+    "shackled",
+    "languid",
+    "towering",
+    "petite",
+    "hulking",
+    "lumbering",
+    "tattooed",
+    "scarred",
+    "fresh",
+    "scrawny",
+    "forgettable",
+    "memorable",
+    "belligerent",
+    "brawny",
+    "strapping",
+    "measly",
+    "tall",
+    "short",
+    "frightful",
+    "dastardly"
+  ],
+  "adj_visitor_vowl": [
+    "#cafe_adj_vowl#",
+    "#colour_vowl#-haired",
+    "#colour_vowl#-garbed",
+    "#material_vowl#-armoured",
+    "#skin_vowl#-skinned",
+    "unimpressive",
+    "average",
+    "amptutated",
+    "honourable",
+    "ill-fated",
+    "ill-mannered"
+  ],
+  "cafe_adj": [
+    "#cafe_adj_cons#",
+    "#cafe_adj_vowl#"
+  ],
+  "cafe_adj_prep": [
+    "a #cafe_adj_cons#",
+    "an #cafe_adj_vowl#"
+  ],
+  "cafe_adj_cons": [
+    "dismal",
+    "wretched",
+    "villainous",
+    "ragged",
+    "humble",
+    "quiet",
+    "brazen",
+    "strange",
+    "repulsive",
+    "lowly",
+    "barbarous",
+    "vulgar",
+    "violent",
+    "hopeless",
+    "noxious"
+  ],
+  "cafe_adj_vowl": [
+    "accursed",
+    "ancient",
+    "unsightly",
+    "insidious"
+  ],
+  "colour_cons": [
+    "golden",
+    "red",
+    "bronze",
+    "silver",
+    "rust",
+    "purple",
+    "mossy",
+    "grey"
+  ],
+  "colour_vowl": [
+    "earthen",
+    "ashen",
+    "umber"
+  ],
+  "material_cons": [
+    "gold",
+    "leather",
+    "silver",
+    "cloth",
+    "bronze",
+    "wood",
+    "bark",
+    "cork",
+    "glass",
+    "steel"
+  ],
+  "material_vowl": [
+    "iron"
+  ],
+  "skin_cons": [
+    "callous",
+    "bronze",
+    "fair"
+  ],
+  "skin_vowl": [
+    "earthen",
+    "ashen",
+    "umber"
+  ],
+  "action_plur": [
+    "#verb#< #subj#>",
+    "#verb#ed< #subj#>"
+  ],
+  "action_sing": [
+    "#verb#s< #subj#>",
+    "#verb#ed< #subj#>"
+  ],
+  "verb": [
+    "#verb_strong#",
+    "#verb_weak#"
+  ],
+  "verb_strong": [
+    "devour",
+    "toast",
+    "pillage"
+  ],
+  "verb_weak": [
+    "putter",
+    "taste",
+    "ponder",
+    "rustle"
+  ],
+  "subj": [
+    "their #noun#",
+    "my #noun#",
+    ""
+  ],
+  "noun": [
+    "health",
+    "meal",
+    "drink",
+    "beer",
+    "coffee"
+  ],
+  "sense": [
+    "smell",
+    "sound",
+    "taste",
+    "touch",
+    "sight"
+  ],
+  "where": [
+    "#by# #place#"
+  ],
+  "by": [
+    "alongside",
+    "astride",
+    "before"
+  ],
+  "place": [
+    "the bar",
+    "the tables",
+    "the crowd",
+    "the kitchen",
+    "the canal",
+    "me",
+    "my perch",
+    "my roost",
+    "my station",
+    "my post"
+  ],
+  "followup": [
+    "fo"
+  ],
+  "quip": [
+    "qu"
+  ]
 }
