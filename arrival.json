@@ -1,0 +1,140 @@
+{
+  "roots": [
+    "#head# #tail#"
+  ],
+  "head": [
+    "<Once more, >I arrive at #prep# <#cafe_adj# >cafe.",
+    "Somehow<,> I find myself<,> here<,> again.",
+    "<Again >I awaken to that familiar<,> <#adj# >#sense#.",
+    "Where else can #cafe_adj_prep# #being# go, but here?",
+    "Where else can the #cafe_adj# go, but here?"
+  ],
+  "prep": [
+    "the", "that", "this"
+  ],
+  "adj": [
+    "#adj_cons#",
+    "#adj_vowl#"
+  ],
+  "adj_prep": [
+    "a #adj_cons#",
+    "an #adj_vowl#"
+  ],
+  "adj_cons": [
+    "#cafe_adj_cons#"
+  ],
+  "adj_vowl": [
+    "#cafe_adj_vowl#"
+  ],
+  "cafe_adj": [
+    "#cafe_adj_cons#",
+    "#cafe_adj_vowl#"
+  ],
+  "cafe_adj_prep": [
+    "a #cafe_adj_cons#",
+    "an #cafe_adj_vowl#"
+  ],
+  "cafe_adj_cons": [
+    "dismal",
+    "wretched",
+    "villainous",
+    "ragged",
+    "humble",
+    "quiet",
+    "brazen",
+    "strange",
+    "repulsive",
+    "lowly",
+    "barbarous",
+    "vulgar",
+    "violent",
+    "hopeless",
+    "noxious"
+  ],
+  "cafe_adj_vowl": [
+    "accursed",
+    "ancient",
+    "unsightly",
+    "insidious"
+  ],
+  "sense": [
+    "smell",
+    "sound",
+    "taste",
+    "touch",
+    "sight"
+  ],
+  "being": [
+    "being",
+    "soul",
+    "creature",
+    "vagrant",
+    "wanderer",
+    "scholar",
+    "mortal",
+    "animal"
+  ],
+  "existence": [
+    "The world",
+    "The universe",
+    "The void",
+    "History",
+    "Fate",
+    "Destiny"
+  ],
+  "more": [
+    "once again",
+    "yet again",
+    "once more",
+    "yet more",
+    "evermore",
+    "without fail",
+    "without end",
+    "ceaselessly"
+  ],
+  "knowing": [
+    "I do not know",
+    "I know not"
+  ],
+  "saving": [
+    "redemption for",
+    "salvation for",
+    "rescue for",
+    "rescuing",
+    "saving"
+  ],
+  "hope": [
+    "hope",
+    "dream",
+    "strive",
+    "work",
+    "live"
+  ],
+  "give": [
+    "offer",
+    "give",
+    "spare",
+    "yield"
+  ],
+  "naught": [
+    "nothing",
+    "nary",
+    "naught",
+    "little"
+  ],
+  "tail": [
+    "#quip#",
+    "#quip#",
+    "#quip#",
+    "#quip#",
+    "#head#"
+  ],
+  "quip": [
+    "#knowing# what <power >draws me here<, again and again>",
+    "There is <likely >no #saving# me< now>",
+    "What more can the #cafe_adj# #hope# for?",
+    "What more can the #cafe_adj# <and #cafe_adj# >#hope# for?",
+    "#existence# can #give# #naught# <more >for #being#s like us",
+    "#existence# cycles #more#, #cafe_adj# and #cafe_adj#."
+  ]
+}
