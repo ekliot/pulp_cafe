@@ -44,12 +44,19 @@
     "brazen",
     "strange",
     "repulsive",
+    "brooding",
     "lowly",
     "barbarous",
     "vulgar",
     "violent",
     "hopeless",
-    "noxious"
+    "noxious",
+    "salt-stained",
+    "sinister",
+    "boisterous",
+    "frightful",
+    "grim",
+    "smoke-stained"
   ],
   "cafe_adj_vowl": [
     "accursed",
@@ -130,11 +137,12 @@
     "#head#"
   ],
   "quip": [
-    "#knowing# what <power >draws me here<, again and again>",
-    "There is <likely >no #saving# me< now>",
+    "#knowing# what <power >draws me here<, again and again>.",
+    "There is <likely >no #saving# me< now>.",
     "What more can the #cafe_adj# #hope# for?",
     "What more can the #cafe_adj# <and #cafe_adj# >#hope# for?",
-    "#existence# can #give# #naught# <more >for #being#s like us",
-    "#existence# cycles #more#, #cafe_adj# and #cafe_adj#."
+    "#existence# can #give# #naught# <more >for #being#s like us.",
+    "#existence# cycles #more#, #cafe_adj# and #cafe_adj#.",
+    "Ceaseless. Peerless."
   ]
 }

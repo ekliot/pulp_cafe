@@ -38,6 +38,8 @@ verbose
 # TODO how likely something extra will be pruned
 # @prune_chance = 0.1 # 10%
 
+# TODO refactor to use tree-node structure
+
 # # # # # #
 # METHODS #
 # # # # # #
@@ -61,7 +63,7 @@ def start
   # @data = JSON.parse( IO.read 'departure.json' )
 
   if !snooze then tweet generate end
-  # (1..10).each do tweet generate; puts "\n\n" end
+  # (1..100).each do tweet generate; puts "\n\n"; sleep 7 end
 end
 
 
@@ -73,7 +75,7 @@ def generate
   root = @data["roots"].sample
 
   # expand the root
-  expanded = expand root, @data
+  expanded = expand( root, @data ).gsub( /s's/, "s'" )
 
   # the naive 'final' string
   fin = expanded.delete('<>')
@@ -83,8 +85,12 @@ def generate
 
   # if pruning was ineffective, regenerate
   if fin.size > @tweet_max_len
-    fin = arrival
+    fin = generate
   end
+
+  fin[0] = fin[0].upcase
+
+  puts fin.size
 
   fin
 end

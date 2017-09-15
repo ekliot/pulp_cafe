@@ -3,21 +3,73 @@
     "#head# #followup# #quip#"
   ],
   "head": [
-    "Today, #visitor_prep# #action_sing#< #where#>.",
-    "#visitor_prep_cap# #action_sing#< #where#>.",
-    "Today, #visitors_prep# #action_plur#< #where#>.",
-    "#visitors_prep_cap# #action_plur#< #where#>.",
-    "#visitor_prep_cap#'s arrival was unprecedented.",
-    "#visitors_prep_cap#'s arrival was unprecedented.",
-    "#visitor_prep_cap# wandered in, #prepared# to #verb_strong#.",
-    "#visitors_prep_cap# wander in, #prepared# to #verb_strong#."
+    "today, #visitor_prep# #action_sing#<, #where#>.",
+    "#visitor_prep# #action_sing#<, #where#>.",
+    "today, #visitors_prep# #action_plur#<, #where#>.",
+    "#visitors_prep# #action_plur#<, #where#>.",
+    "#visitor_prep#'s arrival was unprecedented.",
+    "#visitors_prep#'s arrival was unprecedented.",
+    "#visitor_prep# wandered in, #prepared# to #verb_strong#< and #verb_strong#>.",
+    "#visitors_prep# wander in, #prepared# to #verb_strong#< and #verb_strong#>.",
+    "#fate# has #brought# #visitor_prep#.",
+    "#fate# has #brought# #visitors_prep#.",
+    "#god#s have #brought# #visitor_prep#.",
+    "#god#s have #brought# #visitors_prep#."
+  ],
+  "fate":[
+    "#fortune#",
+    "#misfortune#"
+  ],
+  "fortune":[
+    "fate",
+    "destiny",
+    "luck",
+    "fortune"
+  ],
+  "misfortune": [
+    "ill fate",
+    "bad luck",
+    "misfortune"
+  ],
+  "god": [
+    "<#good# >god",
+    "<#bad# >god"
+  ],
+  "good": [
+    "good",
+    "benevolent",
+    "helpful",
+    "kind",
+    "merciful",
+    "friendly"
+  ],
+  "bad": [
+    "spiteful",
+    "vengeful",
+    "malevolent",
+    "sinister",
+    "sadistic",
+    "indifferent",
+    "loathesome",
+    "evil",
+    "dark"
+  ],
+  "brought": [
+    "drawn in",
+    "attracted",
+    "pulled in",
+    "courted",
+    "sent",
+    "delivered"
   ],
   "prepared": [
     "anxious",
     "hungry",
     "prepared",
     "eager",
-    "restless"
+    "restless",
+    "raring",
+    "zealous"
   ],
   "visitor_prep": [
     "a #adj_visitor_cons# #visitor#",
@@ -29,18 +81,7 @@
     "those <#number# >#adj_visitor# #visitors#",
     "the <#number# >#adj_visitor# #visitors#"
   ],
-  "visitor_prep_cap": [
-    "A #adj_visitor_cons# #visitor#",
-    "An #adj_visitor_vowl# #visitor#",
-    "That #adj_visitor# #visitor#",
-    "The #adj_visitor# #visitor#"
-  ],
-  "visitors_prep_cap": [
-    "Those <#number# >#adj_visitor# #visitors#",
-    "The <#number# >#adj_visitor# #visitors#"
-  ],
   "number": [
-    "one",
     "two",
     "three",
     "four",
@@ -75,7 +116,10 @@
     "craftsman",
     "performer",
     "urchin",
-    "figure"
+    "figure",
+    "sailor",
+    "priest",
+    "merchant"
   ],
   "visitors": [
     "women",
@@ -91,10 +135,13 @@
     "nobles",
     "peasants",
     "artisans",
-    "craftsmans",
+    "craftsmen",
     "performers",
     "urchins",
-    "figures"
+    "figures",
+    "sailors",
+    "priests",
+    "merchants"
   ],
   "adj": [
     "#adj_cons#",
@@ -146,10 +193,20 @@
     "brawny",
     "strapping",
     "measly",
+    "ragged",
     "tall",
     "short",
     "frightful",
-    "dastardly"
+    "dastardly",
+    "windswept",
+    "sun-soaked",
+    "city-bred",
+    "hillborn",
+    "salt-stained",
+    "punch-drunk",
+    "boisterous",
+    "brooding",
+    "soot-ridden"
   ],
   "adj_visitor_vowl": [
     "#cafe_adj_vowl#",
@@ -182,12 +239,19 @@
     "brazen",
     "strange",
     "repulsive",
+    "brooding",
     "lowly",
     "barbarous",
     "vulgar",
     "violent",
     "hopeless",
-    "noxious"
+    "noxious",
+    "salt-stained",
+    "sinister",
+    "boisterous",
+    "frightful",
+    "grim",
+    "smoke-stained"
   ],
   "cafe_adj_vowl": [
     "accursed",
@@ -201,17 +265,37 @@
     "bronze",
     "silver",
     "rust",
-    "purple",
+    "burgundy",
     "mossy",
-    "grey"
+    "grey",
+    "maroon",
+    "turquoise",
+    "smoke",
+    "jet",
+    "midnight",
+    "rose",
+    "salmon",
+    "sandy",
+    "ruby",
+    "scarlet",
+    "crimson",
+    "coffee",
+    "copper",
+    "tawny",
+    "sunset"
   ],
   "colour_vowl": [
     "earthen",
     "ashen",
-    "umber"
+    "umber",
+    "ivory",
+    "emerald",
+    "amber",
+    "olive"
   ],
   "material_cons": [
     "gold",
+    "amber",
     "leather",
     "silver",
     "cloth",
@@ -220,70 +304,156 @@
     "bark",
     "cork",
     "glass",
-    "steel"
+    "steel",
+    "silk",
+    "velvet",
+    "ruby",
+    "sandstone",
+    "copper"
   ],
   "material_vowl": [
-    "iron"
+    "iron",
+    "ivory",
+    "ebony",
+    "emerald"
   ],
   "skin_cons": [
     "callous",
     "bronze",
-    "fair"
+    "fair",
+    "pale",
+    "snow",
+    "velvet",
+    "pearly",
+    "smokey",
+    "jet",
+    "golden",
+    "silver"
   ],
   "skin_vowl": [
     "earthen",
+    "amber",
     "ashen",
-    "umber"
-  ],
-  "action_plur": [
-    "#verb#< #subj#>",
-    "#verb#ed< #subj#>"
+    "umber",
+    "olive",
+    "ivory",
+    "ebony"
   ],
   "action_sing": [
     "#verb#s< #subj#>",
-    "#verb#ed< #subj#>"
+    "#verb_past#< #subj#>"
+  ],
+  "action_plur": [
+    "#verb#< #subj#>",
+    "#verb_past#< #subj#>"
   ],
   "verb": [
     "#verb_strong#",
-    "#verb_weak#"
+    "#verb_weak#",
+    "#sense#"
+  ],
+  "verb_past": [
+    "#verb_strong_past#",
+    "#verb_weak_past#"
   ],
   "verb_strong": [
     "devour",
     "toast",
-    "pillage"
+    "pillage",
+    "brawl",
+    "battle",
+    "thieve",
+    "feed",
+    "dance",
+    "sing",
+    "wrestle",
+    "terrorize"
   ],
   "verb_weak": [
-    "putter",
-    "taste",
     "ponder",
-    "rustle"
+    "taste",
+    "question",
+    "barter",
+    "eat",
+    "drink",
+    "reflect",
+    "frighten",
+    "wonder",
+    "trouble",
+    "admire",
+    "protect",
+    "harass",
+    "guard"
+  ],
+  "verb_strong_past": [
+    "devoured",
+    "toasted",
+    "pillaged",
+    "brawled",
+    "battled",
+    "thieved",
+    "fed",
+    "danced",
+    "sang",
+    "wrestled",
+    "terrorized"
+  ],
+  "verb_weak_past": [
+    "pondered",
+    "tasted",
+    "questioned",
+    "bartered",
+    "ate",
+    "drank",
+    "reflected",
+    "frightened",
+    "wondered",
+    "troubled",
+    "admired",
+    "protected",
+    "harassed",
+    "guarded"
   ],
   "subj": [
     "their #noun#",
-    "my #noun#",
-    ""
+    "my #noun#"
   ],
   "noun": [
+    "#noun_sing#",
+    "#noun_plur#"
+  ],
+  "noun_sing": [
     "health",
     "meal",
-    "drink",
-    "beer",
-    "coffee"
+    "swill",
+    "ale",
+    "black gold",
+    "enemy"
+  ],
+  "noun_plur": [
+    "meals",
+    "swill",
+    "ales",
+    "black gold",
+    "enemies"
   ],
   "sense": [
-    "smell",
-    "sound",
+    "hear",
     "taste",
-    "touch",
-    "sight"
+    "feel",
+    "see"
   ],
   "where": [
-    "#by# #place#"
+    "#by# #place#",
+    "above",
+    "below"
   ],
   "by": [
     "alongside",
     "astride",
-    "before"
+    "before",
+    "by",
+    "at"
   ],
   "place": [
     "the bar",
@@ -298,9 +468,133 @@
     "my post"
   ],
   "followup": [
-    "fo"
+    "I cannot see their doing, #cannot_see#.",
+    "What <else new >is there to see<, here>?",
+    "I try to replicate< #replication#>.",
+    "I try to mimic< #replication#>.",
+    "I try to imitate< #replication#>.",
+    "They leave #when#.",
+    "Why do we #gather#< here>?",
+    "Who watches me?",
+    "Who do #pronoun_plur_neut# seek?",
+    "Where< are #pronoun_plur_neut#> from?",
+    "Where do #pronoun_plur_neut# go?",
+    "Where can #pronoun_plur_neut# go?",
+    "Where will #pronoun_plur_neut# go?",
+    "They <do not >#cafe_do#."
+  ],
+  "cafe_do": [
+    "talk",
+    "converse",
+    "drink",
+    "eat",
+    "smile",
+    "blink",
+    "breathe",
+    "order",
+    "stay",
+    "leave",
+    "depart",
+    "sit< down>",
+    "bring joy"
+  ],
+  "pronoun_plur_neut": [
+    "we",
+    "they"
+  ],
+  "gather": [
+    "congergate",
+    "converge",
+    "collect",
+    "gather",
+    "meet",
+    "amass",
+    "assemble"
+  ],
+  "when": [
+    "shortly",
+    "in good time",
+    "abruptly",
+    "<too >soon",
+    "<too >late"
+  ],
+  "cannot_see": [
+    "blind as I am",
+    "though it is <made >all too clear< their #cafe_adj# intent>",
+    "#conj# why would I care?",
+    "#conj# why should I care?",
+    "#conj# why do I care?",
+    "not that I blame them",
+    "nor do I blame them",
+    "it is best not known",
+    "better not to know",
+    "nobody cares to look"
+  ],
+  "conj": [
+    "and",
+    "but"
+  ],
+  "replication": [
+    "their #act#",
+    "their #act#s",
+    "that #act#",
+    "the #act#s",
+    "the #act#"
+  ],
+  "act": [
+    "deed",
+    "struggle",
+    "act",
+    "action"
   ],
   "quip": [
-    "qu"
+    "Oh, what #cafe_adj# company< they #tobe#>.",
+    "Only when I approach success do they depart.",
+    "A #visitor# collects them #when#.",
+    "Their #reaction# #answers#.",
+    "When they leave, #revelation#."
+  ],
+  "revelation": [
+    "the drinks are full< again>",
+    "a shadow falls< upon #shadow#>",
+    "#shadow# brightens"
+  ],
+  "shadow": [
+    "my mind",
+    "my heart",
+    "my soul",
+    "the cafe",
+    "the patrons"
+  ],
+  "answers": [
+    "answers< me>",
+    "is evidence",
+    "rings loud",
+    "echoes< in my mind>"
+  ],
+  "reaction": [
+    "scowl",
+    "grimace",
+    "grin",
+    "sneer",
+    "leer",
+    "smile",
+    "tremble",
+    "putter",
+    "shudder",
+    "twitch",
+    "yawn",
+    "giggle",
+    "chuckle",
+    "sigh",
+    "yelp",
+    "yowl",
+    "howl"
+  ],
+  "tobe": [
+    "will be",
+    "can be",
+    "would be",
+    "are"
   ]
 }
