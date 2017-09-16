@@ -24,6 +24,9 @@ verbose
 # SCRIPT VARS #
 # # # # # # # #
 
+# get the script's current directory for text access
+@cwd = __dir__ + '/'
+
 # the data to use for tweet creation
 @data = {}
 
@@ -50,20 +53,16 @@ verbose
 def start
   case Time.now.hour
   when 8..10  # 8am-10am
-    @data = JSON.parse( IO.read 'arrival.json' )
+    @data = JSON.parse( IO.read @cwd + 'arrival.json' )
   when 10..20 # 10am-8pm
-    @data = JSON.parse( IO.read 'visitor.json' )
+    @data = JSON.parse( IO.read @cwd + 'visitor.json' )
   when 20..22 # 8pm-10pm
-    @data = JSON.parse( IO.read 'departure.json' )
+    @data = JSON.parse( IO.read @cwd + 'departure.json' )
   else
     snooze = true
   end
-  # @data = JSON.parse( IO.read 'arrival.json' )
-  # @data = JSON.parse( IO.read 'visitor.json' )
-  # @data = JSON.parse( IO.read 'departure.json' )
 
   if !snooze then tweet generate end
-  # (1..100).each do tweet generate; puts "\n\n"; sleep 7 end
 end
 
 
@@ -89,8 +88,6 @@ def generate
   end
 
   fin[0] = fin[0].upcase
-
-  puts fin.size
 
   fin
 end
