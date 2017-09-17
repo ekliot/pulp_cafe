@@ -52,11 +52,11 @@ verbose
 #
 def start
   case Time.now.hour
-  when 8..10  # 8am-10am
+  when 8..9  # 8am-10am
     @data = JSON.parse( IO.read @cwd + 'arrival.json' )
-  when 10..20 # 10am-8pm
+  when 10..19 # 10am-8pm
     @data = JSON.parse( IO.read @cwd + 'visitor.json' )
-  when 20..22 # 8pm-10pm
+  when 20..21 # 8pm-10pm
     @data = JSON.parse( IO.read @cwd + 'departure.json' )
   else
     snooze = true
